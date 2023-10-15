@@ -1,19 +1,17 @@
 //
-//  WeatherAppApp.swift
-//  WeatherApp
+//  NewsWorldAppApp.swift
+//  NewsWorldApp
 //
-//  Created by yusuf bakır on 24.09.2023.
+//  Created by yusuf bakır on 14.10.2023.
 //
 
 import SwiftUI
 
 @main
-struct WeatherAppApp: App {
+struct NewsWorldAppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
     }
 }
-q
-
