@@ -12,7 +12,7 @@ struct  News :Codable {
     let articles : [Article]
 }
 
-struct  Article: Codable {
+struct  Article: Codable ,Identifiable{
     let source :source?
     let author :String?
     let title : String?
@@ -21,10 +21,23 @@ struct  Article: Codable {
     let urlToImage: String?
     let publishedAt: String?
     let content :String?
+    var id:String {
+        url ?? UUID().uuidString
+    }
+   
+    
     
 }
 struct source : Codable {
     let id : String?
     let name :String?
     
+}
+enum Catagory:String, CodingKey {
+    case business = "business"
+    case entertainment = "entertainment"
+    case general = "general"
+    case science = "science"
+    case sports = "sports"
+    case technology = "technology"
 }

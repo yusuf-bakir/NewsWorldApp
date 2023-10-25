@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F0655F502ADAA97C00F3E589 /* NewsWorldAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0655F4F2ADAA97C00F3E589 /* NewsWorldAppApp.swift */; };
-		F0655F522ADAA97C00F3E589 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0655F512ADAA97C00F3E589 /* ContentView.swift */; };
+		F0655F522ADAA97C00F3E589 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0655F512ADAA97C00F3E589 /* HomePage.swift */; };
 		F0655F542ADAA97D00F3E589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0655F532ADAA97D00F3E589 /* Assets.xcassets */; };
 		F0655F572ADAA97D00F3E589 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0655F562ADAA97D00F3E589 /* Preview Assets.xcassets */; };
 		F0655F612ADAA97D00F3E589 /* NewsWorldAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0655F602ADAA97D00F3E589 /* NewsWorldAppTests.swift */; };
@@ -42,7 +42,7 @@
 /* Begin PBXFileReference section */
 		F0655F4C2ADAA97C00F3E589 /* NewsWorldApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsWorldApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0655F4F2ADAA97C00F3E589 /* NewsWorldAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsWorldAppApp.swift; sourceTree = "<group>"; };
-		F0655F512ADAA97C00F3E589 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F0655F512ADAA97C00F3E589 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomePage.swift; path = ../AppDelegate/HomePage.swift; sourceTree = "<group>"; };
 		F0655F532ADAA97D00F3E589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0655F562ADAA97D00F3E589 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F0655F5C2ADAA97D00F3E589 /* NewsWorldAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsWorldAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,7 +53,7 @@
 		F0655F792ADAAD5800F3E589 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		F0655F7F2ADAAE3C00F3E589 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		F0655F812ADAAE7C00F3E589 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
-		F0655F842ADACCB600F3E589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F0655F842ADACCB600F3E589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				F0655F842ADACCB600F3E589 /* Info.plist */,
-				F0655F7B2ADAAD6600F3E589 /* Models */,
 				F0655F7E2ADAADDF00F3E589 /* AppDelegate */,
+				F0655F7B2ADAAD6600F3E589 /* Models */,
 				F0655F832ADAAE9C00F3E589 /* View */,
 				F0655F7D2ADAADD200F3E589 /* ViewManager */,
 				F0655F7C2ADAAD7200F3E589 /* ViewModels */,
@@ -171,7 +171,6 @@
 		F0655F7E2ADAADDF00F3E589 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				F0655F512ADAA97C00F3E589 /* ContentView.swift */,
 				F0655F4F2ADAA97C00F3E589 /* NewsWorldAppApp.swift */,
 			);
 			path = AppDelegate;
@@ -180,6 +179,7 @@
 		F0655F832ADAAE9C00F3E589 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F0655F512ADAA97C00F3E589 /* HomePage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -327,7 +327,7 @@
 				F0655F802ADAAE3C00F3E589 /* NetworkManager.swift in Sources */,
 				F0655F7A2ADAAD5800F3E589 /* Models.swift in Sources */,
 				F0655F822ADAAE7C00F3E589 /* NewsViewModel.swift in Sources */,
-				F0655F522ADAA97C00F3E589 /* ContentView.swift in Sources */,
+				F0655F522ADAA97C00F3E589 /* HomePage.swift in Sources */,
 				F0655F502ADAA97C00F3E589 /* NewsWorldAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
