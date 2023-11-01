@@ -12,21 +12,38 @@ class NewsViewModel:ObservableObject {
     init(service:INewsService) {
         self.service = service
         fetchNews()
-    }
-    @Published var dataNews : News?
-    @Published var isCompleted :Bool?
-    
-    private let service : INewsService?
-    func fetchNews () {
-        service?.fetchItem(urlstring: "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=bdda767774cd45aba4b13ffb8874e2d7", onSuccess: { data, isComplete in
-            self.isCompleted = isComplete
-            DispatchQueue.main.async {
-                self.dataNews = data
-                
-            }
-            
-        })
-        
-    }
+       }
    
-}
+  
+    @Published var isCompleted :Bool = false
+    @Published var article : [Article] = []
+    
+    
+    
+    
+    let apiKey = "bdda767774cd45aba4b13ffb8874e2d7"
+    private var service : INewsService
+    func fetchNews () {
+        service.fetchItem(urlstring: "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=\(apiKey)", onSuccess: { data, isComplete in
+                DispatchQueue.main.async {
+                    self.isCompleted = isComplete
+                    self.article = data.articles
+                    print(data)
+                }
+            })
+        }
+    func fetchNewsCategory (category : String) {
+        let urlBase = "https://newsapi.org/v2/top-headlines?country=us&category=\(category)&apiKey=\(apiKey)"
+        service.fetchItem(urlstring: urlBase) { data, isComplete in
+            self.article =  data.articles
+            self.isCompleted = isComplete
+            print(data)
+
+
+
+        }
+
+    }
+
+   }
+

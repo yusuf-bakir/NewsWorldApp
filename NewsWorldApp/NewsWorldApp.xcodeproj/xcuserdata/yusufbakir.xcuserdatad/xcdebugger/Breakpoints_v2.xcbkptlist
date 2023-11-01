@@ -3,4 +3,54 @@
    uuid = "4F1719D9-C285-4305-8E37-2F3AB64B1A3D"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B2B9DDD4-58CE-43F0-9CC5-DC07A727CFAB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsWorldApp/ViewModels/NewsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "fetchNewsCategory(category:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B2B9DDD4-58CE-43F0-9CC5-DC07A727CFAB - 1ce005b19c9c1f91"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (NewsWorldApp.News, Swift.Bool) -&gt; () in NewsWorldApp.NewsViewModel.fetchNewsCategory(category: Swift.String) -&gt; ()"
+                  moduleName = "NewsWorldApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yusufbakir/Documents/ios/NewsWorldApp/NewsWorldApp/NewsWorldApp/ViewModels/NewsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "B2B9DDD4-58CE-43F0-9CC5-DC07A727CFAB - 1ce005b19c9c1f91"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (NewsWorldApp.News, Swift.Bool) -&gt; () in NewsWorldApp.NewsViewModel.fetchNewsCategory(category: Swift.String) -&gt; ()"
+                  moduleName = "NewsWorldApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yusufbakir/Documents/ios/NewsWorldApp/NewsWorldApp/NewsWorldApp/ViewModels/NewsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "128">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

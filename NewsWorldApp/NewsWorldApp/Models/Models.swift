@@ -12,7 +12,17 @@ struct  News :Codable {
     let articles : [Article]
 }
 
-struct  Article: Codable ,Identifiable{
+struct  Article: Codable,Hashable {
+    
+    static func == (lhs: Article, rhs: Article) -> Bool {
+        return lhs.title == rhs.title && lhs.publishedAt == rhs.publishedAt // Örnek olarak, title ve publishedAt özelliklerine göre eşitlik kontrolü
+       }
+    func hash(into hasher: inout Hasher) {
+           hasher.combine(title)
+           hasher.combine(publishedAt)
+           // Diğer özellikleri de hash'e dahil edebilirsiniz, böylece her özellik birbirinden farklıysa nesneler farklı olarak kabul edilir
+       }
+    
     let source :source?
     let author :String?
     let title : String?
@@ -21,11 +31,9 @@ struct  Article: Codable ,Identifiable{
     let urlToImage: String?
     let publishedAt: String?
     let content :String?
-    var id:String {
-        url ?? UUID().uuidString
-    }
-   
     
+    
+   
     
 }
 struct source : Codable {
@@ -33,11 +41,13 @@ struct source : Codable {
     let name :String?
     
 }
-enum Catagory:String, CodingKey {
-    case business = "business"
+enum CodinKeys:String,CodingKey {
+    case  business = "business"
     case entertainment = "entertainment"
-    case general = "general"
+    case health = "health"
     case science = "science"
     case sports = "sports"
-    case technology = "technology"
+     case technology = "technology"
+
+                        
 }
